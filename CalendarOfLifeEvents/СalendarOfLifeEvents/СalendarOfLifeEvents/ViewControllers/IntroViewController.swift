@@ -9,15 +9,15 @@ import UIKit
 
 class IntroViewController: UIViewController {
     
-    @IBOutlet var IntroImageView: UIImageView! {
-        didSet {
-            IntroImageView.image = UIImage(named: "intro1")
-        }
-    }
+    //MARK: - IB Outlets
+    @IBOutlet var introImageView: UIImageView!
+    @IBOutlet var textIntroLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        introImageView.image = UIImage(named: "intro1")
+        textIntroLabel.text = ImageText.text1.rawValue
     }
 
 

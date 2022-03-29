@@ -19,18 +19,28 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro1" translatesAutoresizingMaskIntoConstraints="NO" id="Nfg-AC-xwQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lV9-7L-0VH">
+                                <rect key="frame" x="16" y="144" width="382" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="31"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lV9-7L-0VH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0vx-Gy-JCP"/>
                             <constraint firstItem="Nfg-AC-xwQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B2W-K0-hrP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lV9-7L-0VH" secondAttribute="trailing" constant="16" id="HXc-Gh-6bi"/>
                             <constraint firstItem="Nfg-AC-xwQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hea-wD-n82"/>
                             <constraint firstItem="Nfg-AC-xwQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mZb-lU-RpK"/>
+                            <constraint firstItem="lV9-7L-0VH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oeu-W0-Cvw"/>
                             <constraint firstAttribute="bottom" secondItem="Nfg-AC-xwQ" secondAttribute="bottom" id="v9z-pV-y5E"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="IntroImageView" destination="Nfg-AC-xwQ" id="39E-jC-bQr"/>
+                        <outlet property="introImageView" destination="Nfg-AC-xwQ" id="39E-jC-bQr"/>
+                        <outlet property="textIntroLabel" destination="lV9-7L-0VH" id="Kg8-1M-LSK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
