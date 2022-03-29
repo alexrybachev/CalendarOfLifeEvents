@@ -8,11 +8,12 @@
 import UIKit
 
 class IntroViewController: UIViewController {
+    
     // MARK: - IB Outlets
-
     @IBOutlet var introImageView: UIImageView!
     @IBOutlet var textIntroLabel: UILabel!
     @IBOutlet var cancelBackButton: UIButton!
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
