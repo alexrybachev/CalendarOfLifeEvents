@@ -12,6 +12,8 @@ class IntroViewController: UIViewController {
     //MARK: - IB Outlets
     @IBOutlet var introImageView: UIImageView!
     @IBOutlet var textIntroLabel: UILabel!
+    @IBOutlet var cancelBackButton: UIButton!
+    @IBOutlet var nextStartButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
