@@ -25,21 +25,40 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9w-dR-zh8">
+                                <rect key="frame" x="16" y="811" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRU-g8-g35">
+                                <rect key="frame" x="331" y="811" width="67" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="lV9-7L-0VH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="0vx-Gy-JCP"/>
+                            <constraint firstItem="XRU-g8-g35" firstAttribute="leading" secondItem="s9w-dR-zh8" secondAttribute="trailing" constant="248" id="25C-wQ-IW5"/>
                             <constraint firstItem="Nfg-AC-xwQ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B2W-K0-hrP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lV9-7L-0VH" secondAttribute="trailing" constant="16" id="HXc-Gh-6bi"/>
+                            <constraint firstItem="s9w-dR-zh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VNU-tk-KXc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XRU-g8-g35" secondAttribute="trailing" constant="16" id="Y3A-EL-U5U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XRU-g8-g35" secondAttribute="bottom" constant="20" id="b0q-Q4-XZL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XRU-g8-g35" secondAttribute="trailing" constant="16" id="dXp-rM-ae2"/>
                             <constraint firstItem="Nfg-AC-xwQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hea-wD-n82"/>
                             <constraint firstItem="Nfg-AC-xwQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mZb-lU-RpK"/>
                             <constraint firstItem="lV9-7L-0VH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="oeu-W0-Cvw"/>
                             <constraint firstAttribute="bottom" secondItem="Nfg-AC-xwQ" secondAttribute="bottom" id="v9z-pV-y5E"/>
+                            <constraint firstItem="s9w-dR-zh8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yL2-ID-uOG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s9w-dR-zh8" secondAttribute="bottom" constant="20" id="ztZ-i2-KpL"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cancelBackButton" destination="s9w-dR-zh8" id="ZsY-px-pfY"/>
                         <outlet property="introImageView" destination="Nfg-AC-xwQ" id="39E-jC-bQr"/>
+                        <outlet property="nextStartButton" destination="XRU-g8-g35" id="v3q-Tg-Lgd"/>
                         <outlet property="textIntroLabel" destination="lV9-7L-0VH" id="Kg8-1M-LSK"/>
                     </connections>
                 </viewController>
