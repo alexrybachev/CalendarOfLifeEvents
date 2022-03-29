@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5F9FD227F2E7FB00D25773 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F9FD127F2E7FB00D25773 /* Model.swift */; };
+		AB5F9FD427F2E81D00D25773 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5F9FD327F2E81D00D25773 /* DataManager.swift */; };
 		CE7B228E27F25D9C00154BEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B228D27F25D9C00154BEF /* AppDelegate.swift */; };
 		CE7B229027F25D9C00154BEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B228F27F25D9C00154BEF /* SceneDelegate.swift */; };
 		CE7B229227F25D9C00154BEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7B229127F25D9C00154BEF /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB5F9FD127F2E7FB00D25773 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AB5F9FD327F2E81D00D25773 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE7B228A27F25D9C00154BEF /* СalendarOfLifeEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "СalendarOfLifeEvents.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7B228D27F25D9C00154BEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE7B228F27F25D9C00154BEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB5F9FCB27F2E76800D25773 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B228D27F25D9C00154BEF /* AppDelegate.swift */,
+				CE7B228F27F25D9C00154BEF /* SceneDelegate.swift */,
+				CE7B229B27F25D9D00154BEF /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AB5F9FCC27F2E78700D25773 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B229327F25D9C00154BEF /* Main.storyboard */,
+				CE7B229827F25D9D00154BEF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		AB5F9FCD27F2E7A400D25773 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B229627F25D9D00154BEF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AB5F9FCE27F2E7B600D25773 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE7B229127F25D9C00154BEF /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AB5F9FCF27F2E7CD00D25773 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F9FD127F2E7FB00D25773 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AB5F9FD027F2E7D700D25773 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB5F9FD327F2E81D00D25773 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CE7B228127F25D9B00154BEF = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +111,12 @@
 		CE7B228C27F25D9C00154BEF /* СalendarOfLifeEvents */ = {
 			isa = PBXGroup;
 			children = (
-				CE7B228D27F25D9C00154BEF /* AppDelegate.swift */,
-				CE7B228F27F25D9C00154BEF /* SceneDelegate.swift */,
-				CE7B229127F25D9C00154BEF /* ViewController.swift */,
-				CE7B229327F25D9C00154BEF /* Main.storyboard */,
-				CE7B229627F25D9D00154BEF /* Assets.xcassets */,
-				CE7B229827F25D9D00154BEF /* LaunchScreen.storyboard */,
-				CE7B229B27F25D9D00154BEF /* Info.plist */,
+				AB5F9FD027F2E7D700D25773 /* Services */,
+				AB5F9FCF27F2E7CD00D25773 /* Model */,
+				AB5F9FCE27F2E7B600D25773 /* ViewControllers */,
+				AB5F9FCC27F2E78700D25773 /* Storyboards */,
+				AB5F9FCD27F2E7A400D25773 /* Resources */,
+				AB5F9FCB27F2E76800D25773 /* App */,
 			);
 			path = "СalendarOfLifeEvents";
 			sourceTree = "<group>";
@@ -139,8 +193,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7B229227F25D9C00154BEF /* ViewController.swift in Sources */,
+				AB5F9FD427F2E81D00D25773 /* DataManager.swift in Sources */,
 				CE7B228E27F25D9C00154BEF /* AppDelegate.swift in Sources */,
 				CE7B229027F25D9C00154BEF /* SceneDelegate.swift in Sources */,
+				AB5F9FD227F2E7FB00D25773 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
