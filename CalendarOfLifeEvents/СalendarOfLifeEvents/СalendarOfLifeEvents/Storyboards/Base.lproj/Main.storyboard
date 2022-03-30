@@ -28,17 +28,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="6Bg-aS-eLh">
                                 <rect key="frame" x="16" y="505" width="288" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" role="cancel" translatesAutoresizingMaskIntoConstraints="NO" id="s9w-dR-zh8">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9w-dR-zh8">
                                         <rect key="frame" x="0.0" y="0.0" width="122" height="31"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Пропустить" titleAlignment="center">
+                                        <buttonConfiguration key="configuration" style="plain" title="Пропустить">
                                             <backgroundConfiguration key="background" image="skipButton" imageContentMode="scaleAspectFit"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="aoq-Ne-XL7" kind="presentation" identifier="toMainScreen" modalPresentationStyle="fullScreen" id="frW-BM-yXb"/>
+                                            <action selector="cancelBackButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Lc-p9-IUs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XRU-g8-g35">
@@ -50,6 +50,9 @@
                                             <backgroundConfiguration key="background" image="nextButton" imageContentMode="scaleAspectFit"/>
                                             <color key="baseForegroundColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="koo-qT-txs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -74,6 +77,7 @@
                         <outlet property="cancelBackButton" destination="s9w-dR-zh8" id="igS-wz-AXo"/>
                         <outlet property="introImageView" destination="Nfg-AC-xwQ" id="39E-jC-bQr"/>
                         <outlet property="textIntroLabel" destination="lV9-7L-0VH" id="Kg8-1M-LSK"/>
+                        <segue destination="aoq-Ne-XL7" kind="presentation" identifier="toMainScreen" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="ffe-ho-ENw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,6 +137,7 @@
                             <constraint firstItem="gYo-6f-OSZ" firstAttribute="bottom" secondItem="szv-gQ-zSD" secondAttribute="bottom" constant="72" id="zG4-xd-Vn5"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="1Ir-wb-nlf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UO9-h8-Hxt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
