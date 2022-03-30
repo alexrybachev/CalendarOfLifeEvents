@@ -24,6 +24,7 @@ class IntroViewController: UIViewController {
         textIntroLabel.text = ImageText.text1.rawValue
     }
     
+    //MARK: - IB Action
     @IBAction func nextButtonPressed() {
         switch textIntroLabel.text {
         case ImageText.text1.rawValue:
