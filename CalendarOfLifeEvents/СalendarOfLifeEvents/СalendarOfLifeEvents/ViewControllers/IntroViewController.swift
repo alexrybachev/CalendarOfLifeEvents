@@ -9,19 +9,18 @@ import UIKit
 
 class IntroViewController: UIViewController {
     
-    //MARK: - IB Outlets
+    // MARK: - IB Outlets
     @IBOutlet var introImageView: UIImageView!
     @IBOutlet var textIntroLabel: UILabel!
     @IBOutlet var cancelBackButton: UIButton!
-    @IBOutlet var nextStartButton: UIButton!
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         introImageView.image = UIImage(named: "intro1")
         textIntroLabel.text = ImageText.text1.rawValue
     }
-
-
 }
-
