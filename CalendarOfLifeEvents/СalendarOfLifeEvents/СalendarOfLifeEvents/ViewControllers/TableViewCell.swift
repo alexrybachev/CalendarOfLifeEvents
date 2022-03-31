@@ -20,20 +20,12 @@ class TableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        delButton.isHidden = true
+        editButton.isHidden = true
         titleLabel.textColor = UIColor(red: 172/255, green: 181/255, blue: 197/255, alpha: 1)
         amountLabel.textColor = UIColor(red: 231/255, green: 120/255, blue: 150/255, alpha: 1)
         qtyLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         lastLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     }
-    
-    @IBAction func pressDelButton() {
-    }
-    
-    @IBAction func pressRepeatButton() {
-    }
-    
-    @IBAction func pressEditButton() {
-    }
-    
+
 }
