@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "navBar.png",
+      "filename" : "setupButton1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "navBar@2x.png",
+      "filename" : "setupButton1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "navBar@3x.png",
+      "filename" : "setupButton1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
