@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol TableViewControllerDelegate {
+    func isHidden(_ bool: Bool)
+}
+
 class TableViewCell: UITableViewCell {
 
     @IBOutlet var titleLabel: UILabel!
@@ -27,5 +31,11 @@ class TableViewCell: UITableViewCell {
         qtyLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         lastLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     }
+}
 
+extension TableViewCell: TableViewControllerDelegate {
+    func isHidden(_ bool: Bool) {
+        delButton.isHidden = bool
+        editButton.isHidden = bool
+    }
 }

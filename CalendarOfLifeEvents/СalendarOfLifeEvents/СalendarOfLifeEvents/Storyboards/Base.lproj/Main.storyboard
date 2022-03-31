@@ -181,6 +181,7 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <sections/>
                                 <connections>
                                     <outlet property="dataSource" destination="aoq-Ne-XL7" id="LAB-Rh-ave"/>
                                     <outlet property="delegate" destination="aoq-Ne-XL7" id="tD1-hM-dRZ"/>
@@ -188,9 +189,43 @@
                             </tableView>
                             <view alpha="0.84999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qf8-t1-QzS">
                                 <rect key="frame" x="0.0" y="476" width="320" height="92"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="NGn-Nc-Il0">
+                                        <rect key="frame" x="20" y="31" width="280" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gim-pd-a86">
+                                                <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Edit"/>
+                                                <connections>
+                                                    <action selector="editButtonPressed" destination="aoq-Ne-XL7" eventType="touchUpInside" id="rEa-d0-Vhh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iHx-W7-Ju9">
+                                                <rect key="frame" x="105" y="0.0" width="70" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Add"/>
+                                                <connections>
+                                                    <action selector="addButtonPressed" destination="aoq-Ne-XL7" eventType="touchUpInside" id="3uf-zE-G3I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBL-Jk-fBn">
+                                                <rect key="frame" x="210" y="0.0" width="70" height="30"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="About"/>
+                                                <connections>
+                                                    <action selector="aboutButtonPressed" destination="aoq-Ne-XL7" eventType="touchUpInside" id="BG0-IX-tkT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="92" id="KSl-hx-hc3"/>
+                                    <constraint firstItem="NGn-Nc-Il0" firstAttribute="leading" secondItem="Qf8-t1-QzS" secondAttribute="leading" constant="20" id="Nvt-qx-Ahd"/>
+                                    <constraint firstAttribute="bottom" secondItem="NGn-Nc-Il0" secondAttribute="bottom" constant="31" id="iQr-fu-kV2"/>
+                                    <constraint firstAttribute="trailing" secondItem="NGn-Nc-Il0" secondAttribute="trailing" constant="20" id="xjg-SU-8dY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jxT-a0-Yrh">

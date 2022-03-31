@@ -17,6 +17,8 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     private var getEvent = Event.getEvent()
     private let bkgColor = UIColor(red: 54/255, green: 58/255, blue: 67/255, alpha: 1)
     
+    var delegate: TableViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.backgroundColor = bkgColor
@@ -54,4 +56,19 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
 
     @IBAction func editButtonPressed(_ sender: UIButton) {}
+}
+
+// MARK: - Actions for three buttons
+extension TableViewController {
+    @IBAction func editButtonPressed() {
+//        delegate?.isHidden(true)
+    }
+    
+    @IBAction func addButtonPressed() {
+        
+    }
+    
+    @IBAction func aboutButtonPressed() {
+        
+    }
 }
