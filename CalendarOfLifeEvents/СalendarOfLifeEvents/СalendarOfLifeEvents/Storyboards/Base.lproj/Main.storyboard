@@ -141,7 +141,7 @@
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" image="trash" catalog="system"/>
                                                             <connections>
-                                                                <action selector="pressDelButton" destination="NcU-Za-kyn" eventType="touchUpInside" id="QhP-4E-QsY"/>
+                                                                <action selector="deleteButtonPressed:" destination="aoq-Ne-XL7" eventType="touchUpInside" id="chX-W6-72C"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGn-mN-XLv">
@@ -149,7 +149,7 @@
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" image="repeat" catalog="system"/>
                                                             <connections>
-                                                                <action selector="pressRepeatButton" destination="NcU-Za-kyn" eventType="touchUpInside" id="akj-FH-7UQ"/>
+                                                                <action selector="repeatButtonPressed:" destination="aoq-Ne-XL7" eventType="touchUpInside" id="pUQ-AV-Ya3"/>
                                                             </connections>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLT-z7-Uej">
@@ -157,7 +157,7 @@
                                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                             <state key="normal" image="pencil" catalog="system"/>
                                                             <connections>
-                                                                <action selector="pressEditButton" destination="NcU-Za-kyn" eventType="touchUpInside" id="r2H-Tv-m7d"/>
+                                                                <action selector="editButtonPressed:" destination="aoq-Ne-XL7" eventType="touchUpInside" id="2sY-ej-3jF"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>

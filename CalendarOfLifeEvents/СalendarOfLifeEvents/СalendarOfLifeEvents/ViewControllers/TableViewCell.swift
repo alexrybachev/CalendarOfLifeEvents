@@ -27,15 +27,5 @@ class TableViewCell: UITableViewCell {
         qtyLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
         lastLabel.textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 1)
     }
-    
-    @IBAction func pressDelButton() {
-    }
-    
-    @IBAction func pressRepeatButton() {
-        
-    }
-    
-    @IBAction func pressEditButton() {
-    }
-    
+
 }
