@@ -104,11 +104,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="left" axis="vertical" alignment="bottom" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Pqs-GA-jTH">
+                                                <stackView opaque="NO" contentMode="left" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Pqs-GA-jTH">
                                                     <rect key="frame" x="32" y="12" width="35.5" height="71.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="253-Fz-8iK">
-                                                            <rect key="frame" x="4.5" y="0.0" width="31" height="14.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="31" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -133,6 +133,33 @@
                                                         </label>
                                                     </subviews>
                                                 </stackView>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGn-mN-XLv">
+                                                    <rect key="frame" x="282" y="41" width="22" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="repeat" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="pressRepeatButton" destination="NcU-Za-kyn" eventType="touchUpInside" id="akj-FH-7UQ"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLT-z7-Uej">
+                                                    <rect key="frame" x="284" y="61" width="18" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="pencil" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="pressEditButton" destination="NcU-Za-kyn" eventType="touchUpInside" id="r2H-Tv-m7d"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kaH-dN-CbA">
+                                                    <rect key="frame" x="283" y="20" width="20" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" image="trash" catalog="system"/>
+                                                    <connections>
+                                                        <action selector="pressDelButton" destination="NcU-Za-kyn" eventType="touchUpInside" id="QhP-4E-QsY"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Pqs-GA-jTH" firstAttribute="top" secondItem="yN0-WJ-8RT" secondAttribute="top" constant="12" id="JkU-x7-IYA"/>
@@ -141,8 +168,11 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="amountLabel" destination="FNz-aG-Tq4" id="qN9-8o-N5G"/>
+                                            <outlet property="delButton" destination="kaH-dN-CbA" id="Hby-Ex-v7s"/>
+                                            <outlet property="editButton" destination="qLT-z7-Uej" id="lSr-8Z-HRK"/>
                                             <outlet property="lastLabel" destination="cQD-4u-ftq" id="dh3-ZJ-0Yr"/>
                                             <outlet property="qtyLabel" destination="0pG-nI-P5s" id="Bra-md-zy7"/>
+                                            <outlet property="repeatButton" destination="yGn-mN-XLv" id="pCj-Yy-yOi"/>
                                             <outlet property="titleLabel" destination="253-Fz-8iK" id="7Wc-G8-kUY"/>
                                         </connections>
                                     </tableViewCell>
@@ -207,8 +237,11 @@
     <resources>
         <image name="intro1" width="214" height="463"/>
         <image name="nextButton" width="122" height="30"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="repeat" catalog="system" width="128" height="98"/>
         <image name="setButton" width="60" height="60"/>
         <image name="skipButton" width="122" height="30"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
