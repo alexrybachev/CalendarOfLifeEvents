@@ -45,7 +45,6 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         cell.qtyLabel.text = "\(String(getEvent[indexPath.row].countFact)) раз"
         cell.lastLabel.text = "\(String(Event.getLongTime(indexPath.row))) дня(ей) назад"
         
-      
         return cell
     }
 }
